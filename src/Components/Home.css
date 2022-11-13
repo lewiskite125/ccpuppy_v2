@@ -21,7 +21,9 @@ span {
   background-image: url(../Images/Tab.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 30vh;
+  min-height: 230px;
+  /* min-height: 30vh; */
+  background-position: 47%;
 }
 .main {
   max-width: 100%;
@@ -538,12 +540,12 @@ textarea:focus {
   font-weight: 400;
 }
 .btn-block {
-    background: #496563;
-    border-color: #496563;
+  background: #496563;
+  border-color: #496563;
   text-transform: uppercase;
   font-size: 15px !important;
   font-weight: 400;
-  font-family: 'Suez One';
+  font-family: "Suez One";
   letter-spacing: 4px;
   height: 43px;
   width: 170px;
@@ -560,33 +562,62 @@ button:focus {
   outline-width: 0;
 }
 @media only screen and (max-width: 600px) {
-    .Tab{
-        min-height: 0vh;
-    }
+  .Tab {
+    /* min-height: 0vh; */
   }
-  @media only screen and (max-width: 600px) {
-    .subscribe__copy{
-       font-size: 12px;
-    }
+}
+@media only screen and (max-width: 600px) {
+  .subscribe__copy {
+    font-size: 12px;
   }
-  @media only screen and (max-width: 600px) {
-    .subscribe__title{
-       font-size: 14px;
-       padding-top: 20px;
-    }
+}
+@media only screen and (max-width: 600px) {
+  .subscribe__title {
+    font-size: 14px;
+    padding-top: 20px;
   }
-  @media only screen and (max-width: 600px) {
-    .form__email{
+}
+@media only screen and (max-width: 600px) {
+  .form__email {
     width: 250px !important;
     padding: 0px !important;
-   }
   }
-  @media only screen and (max-width: 600px) {
-    .form__button{
-        height: 50px;
-    }
+}
+@media only screen and (max-width: 600px) {
+  .form__button {
+    height: 50px;
   }
+}
 
-a{
+a {
   text-decoration: none !important;
+}
+
+@media screen and (min-width: 1556px) {
+  .cxl-flex {
+    display: flex !important;
+  }
+}
+@media screen and (min-width: 1385px) and (max-width: 1555px) {
+  .clg-flex {
+    display: flex !important;
+  }
+}
+@media screen and (min-width: 1184px) and (max-width: 1384px) {
+  .cmd-flex {
+    display: flex !important;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1183px) {
+  .csm-flex {
+    display: flex !important;
+  }
+}
+@media screen and (min-width: 700px) {
+  .cs-flex {
+    display: none !important;
+  }
+}
+.dropdown-item {
+  font-family: "Suez One";
 }
