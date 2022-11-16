@@ -44,7 +44,6 @@ export default function Navbar() {
                 </li>
                 <li class="nav-item">
                   <Link to="/Mintapuppy">
-                    {" "}
                     <a class="nav-link" href="#">
                       MINT A PUPPY
                     </a>

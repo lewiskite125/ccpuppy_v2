@@ -6,33 +6,26 @@ import Img6 from "../Images/icon2.png";
 import Img7 from "../Images/icon3.png";
 import Img8 from "../Images/icon4.png";
 import Img9 from "../Images/icon5.png";
-
+import { Link } from "react-router-dom";
+import paws from "../Images/paws.png";
 
 export default function Roadmap() {
   return (
     <div className="bg">
-     
-      <hr className="line" />
       <div className="heading text-center pt-5 pb-5">
         <label className="heading">ROADMAP</label>
       </div>
-      <div class="container">
-        <div class="main-timeline new">
-          {/* <!-- start experience section--> */}
-          <div class="timeline">
-            <div class="icon"></div>
-            <div class="date-content">
-              <div class="date-outer">
-                <span class="date">
-                  <img className="iconn" src={Img5} />
-                </span>
-              </div>
-            </div>
-            <div class="timeline-content new1">
-              <h5 class="title">Who let the dogs out?</h5>
-              <p class="description">
-                Drum roll pleases...
-                <br />
+      <div className="container roadmap">
+        <div className="row">
+          <div className="col-4 col-sm-2">
+            <img className="w-100" src={Img5} />
+          </div>
+          <div className="col-12 col-sm-10">
+            <h5 class="title">Who let the dogs out?</h5>
+            <p class="description">
+              Drum roll pleases...
+              <br />
+              <ul className="pl-3">
                 <li>Our first litter of 500 little puppies are born.</li>
                 <li>
                   The first 100 pups are FREE and will be released from the
@@ -40,30 +33,32 @@ export default function Roadmap() {
                 </li>
                 <li>
                   If this is the first time you have ever minted an NFT then
-                  watch our
-                  <br />
-                  <span className="style">HOW TO MINT</span> video guide created
-                  by Mark Timmis, CEO of Curious Cryptos Ltd, and he’ll walk you
-                  through the whole process.
+                  watch our{" "}
+                  <Link to="/Mintapuppy">
+                    <span className="style">HOW TO MINT</span>
+                  </Link>{" "}
+                  video guide created by Mark Timmis, CEO of Curious Cryptos
+                  Ltd, and he’ll walk you through the whole process.
                 </li>
-              </p>
-            </div>
+              </ul>
+            </p>
           </div>
-          {/* <!-- end experience section--> */}
-
-          {/* <!-- start experience section--> */}
-          <div class="timeline">
-            <div class="icon"></div>
-            <div class="date-content">
-              <div class="date-outer">
-                <span class="date">
-                  <img className="iconn" src={Img6} />
-                </span>
-              </div>
-            </div>
-            <div class="timeline-content">
-              <h5 class="title">How much is that doggy in the window?</h5>
-              <p class="description text-left">
+        </div>
+        <div className="row">
+          <div className="col-1 col-sm-2"></div>
+          <div className="col-8 col-sm-4">
+            <img src={paws} className="w-100" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-5"></div>
+          <div className="col-4 col-sm-2 ml-auto">
+            <img className="w-100" src={Img6} />
+          </div>
+          <div className="col-12 col-sm-5 mt-5 mt-md-0">
+            <h5 class="title">How much is that doggy in the window?</h5>
+            <p class="description text-left">
+              <ul className="pl-3">
                 <li>
                   As soon as the first 100 free pups have been homes, we will
                   release the other litters in packs of 100.{" "}
@@ -76,47 +71,50 @@ export default function Roadmap() {
                 <li> 201 – 300 = ££</li>
                 <li>301 – 400 = £££</li>
                 <li>401 – 500 = ££££</li>
-              </p>
-            </div>
+              </ul>
+            </p>
           </div>
-          {/* <!-- end experience section--> */}
-
-          {/* <!-- start experience section--> */}
-          <div class="timeline">
-            <div class="icon"></div>
-            <div class="date-content">
-              <div class="date-outer new">
-                <span class="date">
-                  <img className="iconn1" src={Img7} />
-                </span>
-              </div>
-            </div>
-            <div class="timeline-content">
-              <h5 class="title">Nature Nurture</h5>
-              <p class="description">
+        </div>
+        <div className="row">
+          <div className="col-1 col-sm-2"></div>
+          <div className="col-8 col-sm-4 ml-sm-auto">
+            <img src={paws} className="w-100 invertH" />
+          </div>
+          <div className="col-1 col-sm-3"></div>
+        </div>
+        <div className="row flex-row-reverse">
+          <div className="col-12 col-sm-6"></div>
+          <div className="col-4 col-sm-2 mr-auto">
+            <img className="w-100" src={Img7} />
+          </div>
+          <div className="col-12 col-sm-4 mt-5 mt-md-0 text-sm-right">
+            <h5 class="title">Nature Nurture</h5>
+            <p class="description">
+              <ul className="pl-3">
                 <li>
                   At time of minting you can decide whether your puppy remains
                   forever a pup or grows up with changing traits and
                   characteristics.
                 </li>
-              </p>
-            </div>
+              </ul>
+            </p>
           </div>
-          {/* <!-- end experience section--> */}
-
-          {/* <!-- start experience section--> */}
-          <div class="timeline">
-            <div class="icon"></div>
-            <div class="date-content">
-              <div class="date-outer">
-                <span class="date">
-                  <img className="iconn2" src={Img8} />
-                </span>
-              </div>
-            </div>
-            <div class="timeline-content">
-              <h5 class="title">Good dog!</h5>
-              <p class="description text-left">
+        </div>
+        <div className="row">
+          <div className="col-1 col-sm-4"></div>
+          <div className="col-8 col-sm-4">
+            <img src={paws} className="w-100 invertDeg" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-6 col-sm-5"></div>
+          <div className="col-4 col-sm-2 ml-au to">
+            <img className="w-100" src={Img8} />
+          </div>
+          <div className="col-12 col-sm-5">
+            <h5 class="title">Good dog!</h5>
+            <p class="description text-left">
+              <ul className="pl-3">
                 <li>
                   If you choose to nurture and train your pup you must engage
                   with the puppy training school where you will receive for the
@@ -132,64 +130,27 @@ export default function Roadmap() {
                   You may even decide to train your pup for Guide Dogs for the
                   Blind. If you choose this option you will receive a free pup.
                 </li>
-              </p>
-            </div>
+              </ul>
+            </p>
           </div>
-          <div class="timeline">
-            <div class="icon"></div>
-            <div class="date-content">
-              <div class="date-outer">
-                <span class="date">
-                  <img className="iconn3" src={Img9} />
-                </span>
-              </div>
-            </div>
-            <div class="timeline-content">
-              <h5 class="title">Release the hounds!</h5>
-              <p class="description">
-                <li>
-                  Once your pup is fully grown and can behave themselves, they
-                  are released into the doggy metaverse.
-                </li>
-              </p>
-            </div>
-          </div>
-          {/* <!-- end experience section--> */}
         </div>
-      </div>
-      {/* FOOTER */}
-      <div className="bg">
-        <div className="container">
-          <div className="row pt-4">
-            <div className="col-md-2"></div>
-            <div className="col-md-8 subscribe">
-              <h2 class="subscribe__title">JOIN THE PACK</h2>
-              <p class="subscribe__copy">
-                Subscribe to the <b className="tran">Curious Cryptos Ltd </b>
-                <br />
-                mailing list for all things crypto...
-              </p>
-              <div class="form">
-                <input
-                  type="email"
-                  class="form__email"
-                  placeholder="e.g.puppy@kennel.com"
-                />
-                <button class="form__button">JOIN</button>
-              </div>
-            </div>
-            <div className="col-2"></div>
+        <div className="row">
+          <div className="col-4 col-sm-3"></div>
+          <div className="col-8 col-sm-4 mx-auto">
+            <img src={paws} className="w-100 invertDeg2" />
           </div>
-          <div className="row pt-4 pb-4">
-            <div className="col-md-4 text-center">
-              <span className="text">TERMS AND CONDITIONS</span>
-            </div>
-            <div className="col-md-4 text-center">
-              <p className="litt">©2022 Curious Cryptos Ltd.</p>
-            </div>
-            <div className="col-md-4 text-center">
-              <span className="text">PRIVACY POLICY</span>
-            </div>
+        </div>
+        <div className="row mb-4">
+          <div className="col-4 col-sm-2 mx-auto">
+            <img className="w-100" src={Img9} />
+          </div>
+          <div className="col-12"></div>
+          <div className="col-12 col-sm-5 text-center mx-auto mt-4">
+            <h5 class="title">Release the hounds!</h5>
+            <p class="description">
+              Once your pup is fully grown and can behave themselves, they are
+              released into the doggy metaverse.
+            </p>
           </div>
         </div>
       </div>
