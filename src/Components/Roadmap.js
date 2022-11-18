@@ -7,7 +7,10 @@ import Img7 from "../Images/icon3.png";
 import Img8 from "../Images/icon4.png";
 import Img9 from "../Images/icon5.png";
 import { Link } from "react-router-dom";
-import paws from "../Images/paws.png";
+import paws from "../Images/paws1.png";
+import paws2 from "../Images/paws2.png";
+import paws3 from "../Images/paws3.png";
+import paws4 from "../Images/paws4.png";
 
 export default function Roadmap() {
   return (
@@ -55,9 +58,9 @@ export default function Roadmap() {
           <div className="col-4 col-sm-2 ml-auto">
             <img className="w-100" src={Img6} />
           </div>
-          <div className="col-12 col-sm-5 mt-5 mt-md-0">
+          <div className="col-12 col-sm-5 mt-5 mt-md-0 text-right text-sm-left">
             <h5 class="title">How much is that doggy in the window?</h5>
-            <p class="description text-left">
+            <p class="description text-right text-sm-left">
               <ul className="pl-3">
                 <li>
                   As soon as the first 100 free pups have been homes, we will
@@ -76,14 +79,14 @@ export default function Roadmap() {
           </div>
         </div>
         <div className="row">
-          <div className="col-1 col-sm-2"></div>
-          <div className="col-8 col-sm-4 ml-sm-auto">
-            <img src={paws} className="w-100 invertH" />
+          <div className="col-3 col-sm-5"></div>
+          <div className="col-8 col-sm-4">
+            <img src={paws2} className="w-100" />
           </div>
           <div className="col-1 col-sm-3"></div>
         </div>
         <div className="row flex-row-reverse">
-          <div className="col-12 col-sm-6"></div>
+          <div className="col-12 col-sm-"></div>
           <div className="col-4 col-sm-2 mr-auto">
             <img className="w-100" src={Img7} />
           </div>
@@ -103,17 +106,17 @@ export default function Roadmap() {
         <div className="row">
           <div className="col-1 col-sm-4"></div>
           <div className="col-8 col-sm-4">
-            <img src={paws} className="w-100 invertDeg" />
+            <img src={paws3} className="w-100" />
           </div>
         </div>
         <div className="row">
-          <div className="col-6 col-sm-5"></div>
-          <div className="col-4 col-sm-2 ml-au to">
+          <div className="col-8 col-sm-6"></div>
+          <div className="col-4 col-sm-2">
             <img className="w-100" src={Img8} />
           </div>
-          <div className="col-12 col-sm-5">
+          <div className="col-12 col-sm-4 text-right text-sm-left">
             <h5 class="title">Good dog!</h5>
-            <p class="description text-left">
+            <p class="description">
               <ul className="pl-3">
                 <li>
                   If you choose to nurture and train your pup you must engage
@@ -135,9 +138,9 @@ export default function Roadmap() {
           </div>
         </div>
         <div className="row">
-          <div className="col-4 col-sm-3"></div>
+          <div className="col-4 col-sm-4"></div>
           <div className="col-8 col-sm-4 mx-auto">
-            <img src={paws} className="w-100 invertDeg2" />
+            <img src={paws4} className="w-100" />
           </div>
         </div>
         <div className="row mb-4">

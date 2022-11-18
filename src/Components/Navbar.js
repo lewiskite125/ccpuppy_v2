@@ -45,7 +45,7 @@ export default function Navbar() {
                 <li class="nav-item">
                   <Link to="/Mintapuppy">
                     <a class="nav-link" href="#">
-                      MINT A PUPPY
+                      MINT
                     </a>
                   </Link>
                 </li>
@@ -157,7 +157,7 @@ export default function Navbar() {
                   <Link to="/Mintapuppy">
                     {" "}
                     <a class="nav-link" href="#">
-                      MINT A PUPPY
+                      MINT
                     </a>
                   </Link>
                 </li>
@@ -284,7 +284,7 @@ export default function Navbar() {
                   <Link to="/Mintapuppy">
                     {" "}
                     <a class="nav-link" href="#">
-                      MINT A PUPPY
+                      MINT
                     </a>
                   </Link>
                 </li>
@@ -415,7 +415,7 @@ export default function Navbar() {
                       <Link to="/Mintapuppy">
                         {" "}
                         <a class="dropdown-item" href="#">
-                          MINT A PUPPY
+                          MINT
                         </a>
                       </Link>
                     </li>
@@ -537,7 +537,7 @@ export default function Navbar() {
                       <Link to="/Mintapuppy">
                         {" "}
                         <a class="dropdown-item" href="#">
-                          MINT A PUPPY
+                          MINT
                         </a>
                       </Link>
                     </li>

@@ -26,8 +26,8 @@ body {
 }
 .nav-link {
   background-color: #aa2522;
-  padding-left: 70px !important;
-  padding-right: 70px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
   margin: 1px;
   font-family: "Suez One";
   font-size: 17px;
@@ -589,27 +589,27 @@ a {
   text-decoration: none !important;
 }
 
-@media screen and (min-width: 1556px) {
+@media screen and (min-width: 1000px) {
   .cxl-flex {
     display: flex !important;
   }
 }
-@media screen and (min-width: 1385px) and (max-width: 1555px) {
+@media screen and (min-width: 798px) and (max-width: 999px) {
   .clg-flex {
     display: flex !important;
   }
 }
-@media screen and (min-width: 1184px) and (max-width: 1384px) {
+@media screen and (min-width: 561px) and (max-width: 797px) {
   .cmd-flex {
     display: flex !important;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 1183px) {
+@media screen and (min-width: 451px) and (max-width: 560px) {
   .csm-flex {
     display: flex !important;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 451px) {
   .cs-flex {
     display: none !important;
   }
@@ -630,16 +630,10 @@ a {
 .invertH {
   transform: scaleX(-1);
 }
-.invertDeg {
-  transform: rotate(30deg);
-  transform-origin: 0;
-  margin-bottom: 100px;
-}
-.invertDeg2 {
-  transform: scaleX(-1) rotate(20deg);
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
 .fullheight {
   min-height: 60vh;
+}
+.dropdown-menu {
+  left: auto;
+  right: 0 !important;
 }

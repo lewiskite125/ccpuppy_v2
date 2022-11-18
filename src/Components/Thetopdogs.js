@@ -46,7 +46,7 @@ export default function Thetopdogs() {
                   </div>
                   <div className="col-md-4 text-center">
                     {" "}
-                    <img className="w-100 team" src={ImgI} />
+                    <img className="w-100 team invertH" src={ImgI} />
                     <br />
                     <label className="pt-2">
                       Janey de Nordwall
