@@ -4,6 +4,7 @@ import "./Home.css";
 import Img1 from "../Images/1.gif";
 import Img2 from "../Images/2.gif";
 import Img3 from "../Images/3.gif";
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div className="bg">
@@ -24,7 +25,7 @@ export default function Home() {
               <img className="gif" src={Img3} />
             </div>
           </div>
-          <div className="row py-5">
+          <div className="row pt-5">
             <div className="col-md-12 text-center ">
               <p>
                 Our Nifty Puppies has been lovingly nurtured by The Top Dogs at
@@ -44,6 +45,11 @@ export default function Home() {
                 puppies... ​
               </p>
             </div>
+          </div>
+          <div className="text-center py-5">
+            <Link to="/Roadmap">
+              <button className="btn">MINT NOW</button>
+            </Link>
           </div>
         </div>
       </div>

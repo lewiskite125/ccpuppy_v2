@@ -26,7 +26,7 @@ export default function Roadmap() {
           <div className="col-12 col-sm-10">
             <h5 class="title">Who let the dogs out?</h5>
             <p class="description">
-              Drum roll pleases...
+              Drum roll please...
               <br />
               <ul className="pl-3">
                 <li>Our first litter of 500 little puppies are born.</li>
@@ -63,7 +63,7 @@ export default function Roadmap() {
             <p class="description text-right text-sm-left">
               <ul className="pl-3">
                 <li>
-                  As soon as the first 100 free pups have been homes, we will
+                  As soon as the first 100 free pups have been homed, we will
                   release the other litters in packs of 100.{" "}
                 </li>
                 <li>
