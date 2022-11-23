@@ -552,10 +552,10 @@ textarea:focus {
   border-color: #496563;
 }
 button:focus {
-  -moz-box-shadow: none !important;
+  /* -moz-box-shadow: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  outline-width: 0;
+  outline-width: 0; */
 }
 @media only screen and (max-width: 600px) {
   .Tab {
@@ -636,4 +636,23 @@ a {
 .dropdown-menu {
   left: auto;
   right: 0 !important;
+}
+.dropdown-toggle {
+  cursor: pointer !important;
+}
+.dropdown-menu a {
+  color: #000;
+}
+.quantitybtn {
+  font-family: "Suez One";
+  background-color: #aa2522;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+.quantity {
+  font-family: "Suez One";
+  font-size: 22px;
+  user-select: none;
 }

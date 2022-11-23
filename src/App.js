@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
+
 import Home from "./Components/Home";
 import Roadmap from "./Components/Roadmap";
 import Mintapuppy from "./Components/Mintapuppy";
@@ -26,14 +25,6 @@ function App() {
       <Route path="/Thetopdogs" element={<Thetopdogs />} />
       <Route path="/Contact" element={<Contact />} />
     </Routes>
-    // <Roadmap/>
-    // <Mintapuppy/>
-    // <Connecttometamask/>
-    // <Seeyourpup/>
-    // <Glossary/>
-    // <Faqs/>
-    // <Thetopdogs/>
-    // <Contact/>
   );
 }
 

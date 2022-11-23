@@ -5,16 +5,16 @@ export default function Contact() {
     <div>
       <div className="bg">
         <div className="bg">
-          <div class="container-fluid px-1 py-5 mx-auto">
-            <div class="row d-flex justify-content-center">
-              <div class="col-xl-4 col-lg-8 col-md-9 col-11 text-center">
-                <div class="card">
-                  <form class="form-card" onsubmit="event.preventDefault()">
-                    <div class="row justify-content-between text-left">
-                      <div class="form-group col-sm-6 flex-column d-flex">
+          <div className="container-fluid px-1 py-5 mx-auto">
+            <div className="row d-flex justify-content-center">
+              <div className="col-xl-4 col-lg-8 col-md-9 col-11 text-center">
+                <div className="card">
+                  <form className="form-card" onsubmit="event.preventDefault()">
+                    <div className="row justify-content-between text-left">
+                      <div className="form-group col-sm-6 flex-column d-flex">
                         {" "}
-                        <label class="form-control-label px-3">
-                          First name<span class="text-danger"> *</span>
+                        <label className="form-control-label px-3">
+                          First name<span className="text-danger"> *</span>
                         </label>{" "}
                         <input
                           type="text"
@@ -24,10 +24,10 @@ export default function Contact() {
                           onblur="validate(1)"
                         />{" "}
                       </div>
-                      <div class="form-group col-sm-6 flex-column d-flex">
+                      <div className="form-group col-sm-6 flex-column d-flex">
                         {" "}
-                        <label class="form-control-label px-3">
-                          Last name<span class="text-danger"> *</span>
+                        <label className="form-control-label px-3">
+                          Last name<span className="text-danger"> *</span>
                         </label>{" "}
                         <input
                           type="text"
@@ -38,11 +38,11 @@ export default function Contact() {
                         />{" "}
                       </div>
                     </div>
-                    <div class="row justify-content-between text-left">
-                      <div class="form-group col-sm-12 flex-column d-flex">
+                    <div className="row justify-content-between text-left">
+                      <div className="form-group col-sm-12 flex-column d-flex">
                         {" "}
-                        <label class="form-control-label px-3">
-                          Email<span class="text-danger"> *</span>
+                        <label className="form-control-label px-3">
+                          Email<span className="text-danger"> *</span>
                         </label>{" "}
                         <input
                           type="text"
@@ -52,10 +52,10 @@ export default function Contact() {
                           onblur="validate(3)"
                         />{" "}
                       </div>
-                      {/* <div class="form-group col-sm-6 flex-column d-flex">
+                      {/* <div className="form-group col-sm-6 flex-column d-flex">
                         {" "}
-                        <label class="form-control-label px-3">
-                          Phone number<span class="text-danger"> *</span>
+                        <label className="form-control-label px-3">
+                          Phone number<span className="text-danger"> *</span>
                         </label>{" "}
                         <input
                           type="text"
@@ -66,11 +66,11 @@ export default function Contact() {
                         />{" "}
                       </div> */}
                     </div>
-                    {/* <div class="row justify-content-between text-left">
-                      <div class="form-group col-sm-6 flex-column d-flex">
+                    {/* <div className="row justify-content-between text-left">
+                      <div className="form-group col-sm-6 flex-column d-flex">
                         {" "}
-                        <label class="form-control-label px-3">
-                          Job title<span class="text-danger"> *</span>
+                        <label className="form-control-label px-3">
+                          Job title<span className="text-danger"> *</span>
                         </label>{" "}
                         <input
                           type="text"
@@ -81,12 +81,12 @@ export default function Contact() {
                         />{" "}
                       </div>
                     </div> */}
-                    <div class="row justify-content-between text-left">
-                      <div class="form-group col-12 flex-column d-flex">
+                    <div className="row justify-content-between text-left">
+                      <div className="form-group col-12 flex-column d-flex">
                         {" "}
-                        <label class="form-control-label px-3">
+                        <label className="form-control-label px-3">
                           Write a message
-                          <span class="text-danger"> *</span>
+                          <span className="text-danger"> *</span>
                         </label>{" "}
                         <input
                           type="text"
@@ -97,10 +97,10 @@ export default function Contact() {
                         />{" "}
                       </div>
                     </div>
-                    <div class="row justify-content-start">
-                      <div class="form-group col-sm-6">
+                    <div className="row justify-content-start">
+                      <div className="form-group col-sm-6">
                         {" "}
-                        <button type="submit" class="btn-block btn-primary">
+                        <button type="submit" className="btn-block btn-primary">
                           Submit
                         </button>{" "}
                       </div>

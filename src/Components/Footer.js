@@ -10,8 +10,8 @@ export default function Footer() {
           <div className="col-md-2"></div>
           <div className="col-md-8">
             <div className="subscribe">
-              <h2 class="subscribe__title">JOIN THE PACK</h2>
-              <p class="subscribe__copy">
+              <h2 className="subscribe__title">JOIN THE PACK</h2>
+              <p className="subscribe__copy">
                 Subscribe to the{" "}
                 <a href="https://www.curiouscryptos.com/">
                   <b className="tran">Curious Cryptos Ltd </b>
@@ -20,13 +20,13 @@ export default function Footer() {
                 mailing list for all things crypto...
               </p>
               <div className="container">
-                <div class="row">
+                <div className="row">
                   <input
                     type="email"
-                    class="form__email col-12 col-sm-9 px-3"
+                    className="form__email col-12 col-sm-9 px-3"
                     placeholder="e.g.puppy@kennel.com"
                   />
-                  <button class="form__button col-12 col-sm-3">JOIN</button>
+                  <button className="form__button col-12 col-sm-3">JOIN</button>
                 </div>
               </div>
             </div>

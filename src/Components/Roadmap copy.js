@@ -14,21 +14,21 @@ export default function Roadmap() {
       <div className="heading text-center pt-5 pb-5">
         <label className="heading">ROADMAP</label>
       </div>
-      <div class="container">
-        <div class="main-timeline new">
+      <div className="container">
+        <div className="main-timeline new">
           {/* <!-- start experience section--> */}
-          <div class="timeline">
-            <div class="icon"></div>
-            <div class="date-content">
-              <div class="date-outer">
-                <span class="date">
+          <div className="timeline">
+            <div className="icon"></div>
+            <div className="date-content">
+              <div className="date-outer">
+                <span className="date">
                   <img className="iconn" src={Img5} />
                 </span>
               </div>
             </div>
-            <div class="timeline-content new1">
-              <h5 class="title">Who let the dogs out?</h5>
-              <p class="description">
+            <div className="timeline-content new1">
+              <h5 className="title">Who let the dogs out?</h5>
+              <p className="description">
                 Drum roll please...
                 <br />
                 <li>Our first litter of 500 little puppies are born.</li>
@@ -51,18 +51,18 @@ export default function Roadmap() {
           {/* <!-- end experience section--> */}
 
           {/* <!-- start experience section--> */}
-          <div class="timeline">
-            <div class="icon"></div>
-            <div class="date-content">
-              <div class="date-outer">
-                <span class="date">
+          <div className="timeline">
+            <div className="icon"></div>
+            <div className="date-content">
+              <div className="date-outer">
+                <span className="date">
                   <img className="iconn" src={Img6} />
                 </span>
               </div>
             </div>
-            <div class="timeline-content">
-              <h5 class="title">How much is that doggy in the window?</h5>
-              <p class="description text-left">
+            <div className="timeline-content">
+              <h5 className="title">How much is that doggy in the window?</h5>
+              <p className="description text-left">
                 <li>
                   As soon as the first 100 free pups have been homed, we will
                   release the other litters in packs of 100.{" "}
@@ -81,18 +81,18 @@ export default function Roadmap() {
           {/* <!-- end experience section--> */}
 
           {/* <!-- start experience section--> */}
-          <div class="timeline">
-            <div class="icon"></div>
-            <div class="date-content">
-              <div class="date-outer new">
-                <span class="date">
+          <div className="timeline">
+            <div className="icon"></div>
+            <div className="date-content">
+              <div className="date-outer new">
+                <span className="date">
                   <img className="iconn1" src={Img7} />
                 </span>
               </div>
             </div>
-            <div class="timeline-content">
-              <h5 class="title">Nature Nurture</h5>
-              <p class="description">
+            <div className="timeline-content">
+              <h5 className="title">Nature Nurture</h5>
+              <p className="description">
                 <li>
                   At time of minting you can decide whether your puppy remains
                   forever a pup or grows up with changing traits and
@@ -104,18 +104,18 @@ export default function Roadmap() {
           {/* <!-- end experience section--> */}
 
           {/* <!-- start experience section--> */}
-          <div class="timeline">
-            <div class="icon"></div>
-            <div class="date-content">
-              <div class="date-outer">
-                <span class="date">
+          <div className="timeline">
+            <div className="icon"></div>
+            <div className="date-content">
+              <div className="date-outer">
+                <span className="date">
                   <img className="iconn2" src={Img8} />
                 </span>
               </div>
             </div>
-            <div class="timeline-content">
-              <h5 class="title">Good dog!</h5>
-              <p class="description text-left">
+            <div className="timeline-content">
+              <h5 className="title">Good dog!</h5>
+              <p className="description text-left">
                 <li>
                   If you choose to nurture and train your pup you must engage
                   with the puppy training school where you will receive for the
@@ -134,18 +134,18 @@ export default function Roadmap() {
               </p>
             </div>
           </div>
-          <div class="timeline">
-            <div class="icon"></div>
-            <div class="date-content">
-              <div class="date-outer">
-                <span class="date">
+          <div className="timeline">
+            <div className="icon"></div>
+            <div className="date-content">
+              <div className="date-outer">
+                <span className="date">
                   <img className="iconn3" src={Img9} />
                 </span>
               </div>
             </div>
-            <div class="timeline-content">
-              <h5 class="title">Release the hounds!</h5>
-              <p class="description">
+            <div className="timeline-content">
+              <h5 className="title">Release the hounds!</h5>
+              <p className="description">
                 <li>
                   Once your pup is fully grown and can behave themselves, they
                   are released into the doggy metaverse.

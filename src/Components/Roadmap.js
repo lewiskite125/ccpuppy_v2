@@ -24,8 +24,8 @@ export default function Roadmap() {
             <img className="w-100" src={Img5} />
           </div>
           <div className="col-12 col-sm-10">
-            <h5 class="title">Who let the dogs out?</h5>
-            <p class="description">
+            <h5 className="title">Who let the dogs out?</h5>
+            <p className="description">
               Drum roll please...
               <br />
               <ul className="pl-3">
@@ -59,8 +59,8 @@ export default function Roadmap() {
             <img className="w-100" src={Img6} />
           </div>
           <div className="col-12 col-sm-5 mt-5 mt-md-0 text-right text-sm-left">
-            <h5 class="title">How much is that doggy in the window?</h5>
-            <p class="description text-right text-sm-left">
+            <h5 className="title">How much is that doggy in the window?</h5>
+            <p className="description text-right text-sm-left">
               <ul className="pl-3">
                 <li>
                   As soon as the first 100 free pups have been homed, we will
@@ -91,8 +91,8 @@ export default function Roadmap() {
             <img className="w-100" src={Img7} />
           </div>
           <div className="col-12 col-sm-4 mt-5 mt-md-0 text-sm-right">
-            <h5 class="title">Nature Nurture</h5>
-            <p class="description">
+            <h5 className="title">Nature Nurture</h5>
+            <p className="description">
               <ul className="pl-3">
                 <li>
                   At time of minting you can decide whether your puppy remains
@@ -115,8 +115,8 @@ export default function Roadmap() {
             <img className="w-100" src={Img8} />
           </div>
           <div className="col-12 col-sm-4 text-right text-sm-left">
-            <h5 class="title">Good dog!</h5>
-            <p class="description">
+            <h5 className="title">Good dog!</h5>
+            <p className="description">
               <ul className="pl-3">
                 <li>
                   If you choose to nurture and train your pup you must engage
@@ -149,8 +149,8 @@ export default function Roadmap() {
           </div>
           <div className="col-12"></div>
           <div className="col-12 col-sm-5 text-center mx-auto mt-4">
-            <h5 class="title">Release the hounds!</h5>
-            <p class="description">
+            <h5 className="title">Release the hounds!</h5>
+            <p className="description">
               Once your pup is fully grown and can behave themselves, they are
               released into the doggy metaverse.
             </p>
