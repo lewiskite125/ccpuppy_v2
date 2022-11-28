@@ -12,7 +12,7 @@ import { ethers } from "ethers";
 import ABI from "./abi.json";
 const PROVIDER =
   "https://mainnet.infura.io/v3/97d9f5fedfa34db7a15d53259ffe34c2";
-const CONTRACT = "0x4fb16636db3f657A64dafB368A8b09c223db2e2d";
+const CONTRACT = "0x82c1E9B5fB48349821dCEBd0bfaA52cC97e160cD";
 
 export default function Mintapuppy() {
   const [connected, setConnected] = useState(false);
