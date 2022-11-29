@@ -10,14 +10,14 @@ import { ethers } from "ethers";
 // https://mainnet.infura.io/v3/97d9f5fedfa34db7a15d53259ffe34c2
 
 import ABI from "./abi.json";
-const PROVIDER =
-  "https://mainnet.infura.io/v3/97d9f5fedfa34db7a15d53259ffe34c2";
-const CONTRACT = "0x82c1E9B5fB48349821dCEBd0bfaA52cC97e160cD";
+const PROVIDER = "https://goerli.infura.io/v3/bd3283c53475479792ed8f68c398a0e9";
+const CONTRACT = "0x37CEc5a9645c16D217177714566E9580c0c92ce4";
 
 export default function Mintapuppy() {
   const [connected, setConnected] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const [price, setPrice] = useState(0);
+  const [max, setMax] = useState(3);
 
   const connect = async () => {
     if (!window.ethereum) {
@@ -35,6 +35,7 @@ export default function Mintapuppy() {
 
     const ct = new ethers.Contract(CONTRACT, ABI, provider);
     setPrice(Number(await ct.price_Public()));
+    setMax(Number(await ct.mint_perAdd()));
     setConnected(true);
   };
 
@@ -104,7 +105,7 @@ export default function Mintapuppy() {
                 <div className="row pt-4">
                   <div className="col-12 text-center">
                     <p className="text-center">
-                      Price: <b>{(price / 10e18) * quantity} ETH</b>
+                      {/* Price: <b>{(price / 10e18) * quantity} ETH</b> */}
                     </p>
                   </div>
                   <div className="col-12 text-center">
@@ -119,7 +120,7 @@ export default function Mintapuppy() {
                     <span className="px-2 quantity">{quantity}</span>
                     <a
                       onClick={() =>
-                        setQuantity(quantity < 10 ? quantity + 1 : quantity)
+                        setQuantity(quantity < max ? quantity + 1 : quantity)
                       }
                       className="quantitybtn"
                     >

@@ -118,6 +118,7 @@ body {
   /* padding: 10px; */
   border: none;
   width: 50px;
+  cursor: pointer;
   /* height: 55px; */
   font-family: "Raleway";
   font-weight: 400;
