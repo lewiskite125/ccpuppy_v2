@@ -58,24 +58,58 @@ export default function Navbar() {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <Link to="/Connecttometamask">
-                        <a className="dropdown-item">CONNECT TO METAMASK</a>
+                      <Link to="/Connect to metamask">
+                        <a className="dropdown-item">
+                          Install and set-up MetaMask
+                        </a>
                       </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link to="/Seeyourpup">
-                        <a className="dropdown-item">MINT AND SEE YOUR PUP</a>
+                      <Link to="/How to buy ETH on Coinbase">
+                        <a className="dropdown-item">
+                          How to buy ETH on Coinbase
+                        </a>
                       </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link to="/Glossary">
-                        <a className="dropdown-item">GLOSSARY OF TERMS</a>
+                      <Link to="/Transfer ETH to MetaMask">
+                        <a className="dropdown-item">
+                          Transfer ETH to MetaMask
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/Input NiftyPups contract to MetaMask">
+                        <a className="dropdown-item">
+                          Input NiftyPups contract to MetaMask
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/Mint your very own puppy">
+                        <a className="dropdown-item">
+                          Mint your very own puppy
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/A-Z">
+                        <a className="dropdown-item">A - Z</a>
                       </Link>
                     </li>
                     <li>
@@ -151,24 +185,58 @@ export default function Navbar() {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <Link to="/Connecttometamask">
-                        <a className="dropdown-item">CONNECT TO METAMASK</a>
+                      <Link to="/Connect to metamask">
+                        <a className="dropdown-item">
+                          Install and set-up MetaMask
+                        </a>
                       </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link to="/Seeyourpup">
-                        <a className="dropdown-item">MINT AND SEE YOUR PUP</a>
+                      <Link to="/How to buy ETH on Coinbase">
+                        <a className="dropdown-item">
+                          How to buy ETH on Coinbase
+                        </a>
                       </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link to="/Glossary">
-                        <a className="dropdown-item">GLOSSARY OF TERMS</a>
+                      <Link to="/Transfer ETH to MetaMask">
+                        <a className="dropdown-item">
+                          Transfer ETH to MetaMask
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/Input NiftyPups contract to MetaMask">
+                        <a className="dropdown-item">
+                          Input NiftyPups contract to MetaMask
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/Mint your very own puppy">
+                        <a className="dropdown-item">
+                          Mint your very own puppy
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/A-Z">
+                        <a className="dropdown-item">A - Z</a>
                       </Link>
                     </li>
                     <li>
@@ -261,24 +329,58 @@ export default function Navbar() {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <Link to="/Connecttometamask">
-                        <a className="dropdown-item">CONNECT TO METAMASK</a>
+                      <Link to="/Connect to metamask">
+                        <a className="dropdown-item">
+                          Install and set-up MetaMask
+                        </a>
                       </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link to="/Seeyourpup">
-                        <a className="dropdown-item">MINT AND SEE YOUR PUP</a>
+                      <Link to="/How to buy ETH on Coinbase">
+                        <a className="dropdown-item">
+                          How to buy ETH on Coinbase
+                        </a>
                       </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link to="/Glossary">
-                        <a className="dropdown-item">GLOSSARY OF TERMS</a>
+                      <Link to="/Transfer ETH to MetaMask">
+                        <a className="dropdown-item">
+                          Transfer ETH to MetaMask
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/Input NiftyPups contract to MetaMask">
+                        <a className="dropdown-item">
+                          Input NiftyPups contract to MetaMask
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/Mint your very own puppy">
+                        <a className="dropdown-item">
+                          Mint your very own puppy
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/A-Z">
+                        <a className="dropdown-item">A - Z</a>
                       </Link>
                     </li>
                     <li>
@@ -363,24 +465,58 @@ export default function Navbar() {
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link to="/Connecttometamask">
-                        <a className="dropdown-item">CONNECT TO METAMASK</a>
+                      <Link to="/Connect to metamask">
+                        <a className="dropdown-item">
+                          Install and set-up MetaMask
+                        </a>
                       </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link to="/Seeyourpup">
-                        <a className="dropdown-item">MINT AND SEE YOUR PUP</a>
+                      <Link to="/How to buy ETH on Coinbase">
+                        <a className="dropdown-item">
+                          How to buy ETH on Coinbase
+                        </a>
                       </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link to="/Glossary">
-                        <a className="dropdown-item">GLOSSARY OF TERMS</a>
+                      <Link to="/Transfer ETH to MetaMask">
+                        <a className="dropdown-item">
+                          Transfer ETH to MetaMask
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/Input NiftyPups contract to MetaMask">
+                        <a className="dropdown-item">
+                          Input NiftyPups contract to MetaMask
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/Mint your very own puppy">
+                        <a className="dropdown-item">
+                          Mint your very own puppy
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/A-Z">
+                        <a className="dropdown-item">A - Z</a>
                       </Link>
                     </li>
                     <li>
@@ -470,24 +606,58 @@ export default function Navbar() {
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link to="/Connecttometamask">
-                        <a className="dropdown-item">CONNECT TO METAMASK</a>
+                      <Link to="/Connect to metamask">
+                        <a className="dropdown-item">
+                          Install and set-up MetaMask
+                        </a>
                       </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link to="/Seeyourpup">
-                        <a className="dropdown-item">MINT AND SEE YOUR PUP</a>
+                      <Link to="/How to buy ETH on Coinbase">
+                        <a className="dropdown-item">
+                          How to buy ETH on Coinbase
+                        </a>
                       </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link to="/Glossary">
-                        <a className="dropdown-item">GLOSSARY OF TERMS</a>
+                      <Link to="/Transfer ETH to MetaMask">
+                        <a className="dropdown-item">
+                          Transfer ETH to MetaMask
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/Input NiftyPups contract to MetaMask">
+                        <a className="dropdown-item">
+                          Input NiftyPups contract to MetaMask
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/Mint your very own puppy">
+                        <a className="dropdown-item">
+                          Mint your very own puppy
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <Link to="/A-Z">
+                        <a className="dropdown-item">A - Z</a>
                       </Link>
                     </li>
                     <li>

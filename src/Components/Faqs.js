@@ -1,126 +1,207 @@
 import React from "react";
 import "./Home.css";
-import ImgF from "../Images/faq.png";
+import punk from "../Images/punk.png";
 
 export default function Faqs() {
   return (
     <div>
       <div className="bg">
-        <div className="bg"></div>
         <div className="background">
-          <div className="text-center pt-5">
-            <img className="w-100 faq" src={ImgF} />
+          <div className="container">
+            <div className="row pt-5">
+              <div className="col-md-12 text-center">
+                <label className="heading">FAQs Part One</label>
+                <h5>
+                  <b>Background and Theory</b>
+                </h5>
+              </div>
+            </div>
           </div>
+          <br />
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <label> • How much does a CCPUPPY cost?</label>
+                <label>1. Help!!</label>
                 <p>
-                  At launch, 1,000 CCPuppies will be available for minting. The
-                  first 200 will be free for purchase, though you will need to
-                  pay the (small) gas fees charged by the BSC blockchain. After
-                  that, each batch of 200 puppies will be offered for sale at
-                  ever increasing prices. If all 1,000 have sold by the time you
-                  read this, and you still want to buy a CCPuppy, then read the
-                  FAQ 'How do I BUY A CCPUPPY?'
+                  “I am very new to this – how can you help me?” I hear you cry.
                 </p>
-                <label className="pt-4"> • How much does a CCPUPPY cost?</label>
                 <p>
-                  Add this token address <b className="headd">(TBC)</b> to your
-                  MetaMask wallet configured to Smart Chain (detailed
-                  instructions
-                  <br /> are to be found in the FAQs section).
-                  <br /> Click{" "}
-                  <b className="headd"> CONNECT METAMASK WALLET </b>
+                  These FAQs cover what we believe to be the crucial information
+                  you need to get involved with Nifty Puppies.
+                </p>
+                <p>
+                  Alongside this text, we have produced detailed modules of all
+                  the technical and practical aspects to assist you on your
+                  Puppy NFT journey.
+                </p>
+                <p>
+                  If you any questions or queries the CCC team is ready and
+                  willing to assist immediately.
+                </p>
+                <p>
+                  In the first instance please email:{" "}
+                  <a href="mailto:mark@curiouscryptos.com">
+                    mark@curiouscryptos.com
+                  </a>
+                </p>
+                <label className="">2. What are NFTs?</label>
+                <p>NFTs is an acronym for Non-Fungible Tokens.</p>
+                <p>
+                  NFTs are cryptographic assets on a blockchain with unique
+                  identification codes, owned by a crypto wallet, with metadata
+                  that distinguishes them from each other. The variety of assets
+                  is wide-ranging, but digital art was the first use case, and
+                  is the most well-known and understood.{" "}
+                </p>
+                <p>
+                  These tokens are non-fungible in the sense that they are
+                  unique and cannot be interchanged like fungible assets such as
+                  Bitcoin or the pound, dollar, or euro, in your pocket.{" "}
+                </p>
+                <p>
+                  Let’s take an example to make this point clear. If you
+                  exchange one Bitcoin for another, nothing changes, you still
+                  get a Bitcoin back with the exact same properties it was
+                  created with (*). This the same as exchanging one £10 note for
+                  another. This is not the case with NFTs.{" "}
+                </p>
+                <p>
+                  (*) There are some possible exceptions to this, but this small
+                  wrinkle can be conveniently ignored for now.
+                </p>
+                <label className="">3. What are NFTs used for?</label>
+                <p>
+                  NFTs are used to indicate ownership of an asset through its
+                  related metadata.
+                </p>
+                <p>
+                  As indicated above, the most common use-case is to prove
+                  ownership of digital art, which is frequently in the form of a
+                  picture file stored on a server in the cloud. Increasingly
+                  NFTs are used to prove ownership of in-game items, music, and
+                  photography, all existing in digital format.
+                </p>
+                <label className="">
+                  4. What can NFTs be used for in the future?
+                </label>
+                <p>
+                  Perhaps the greatest potential for NFTs lies in the ability to
+                  prove ownership of real-life, not just digital, assets.
+                </p>
+                <p>
+                  If you own a physical piece of art – be it a painting, photo,
+                  a music track etc. – and you own the copyright (a slightly
+                  thorny subject to which we will return) you can mint a digital
+                  representation as an NFT. Once we all own houses in the
+                  metaverse, showing off one’s art collection in virtual reality
+                  will become as commonplace as using social media. In fact, the
+                  metaverse will be social media, though possibly not in the
+                  centralised form as envisaged by Mark Zuckerberg.
+                </p>
+                <p>There are other uses.</p>
+                <p>
+                  Proving ownership of real estate assets is ripe for an NFT
+                  revolution, as is the whole process of conveyancing.
+                </p>
+                <p>
+                  Supply chain documentation, employment contracts, the vast
+                  amount of contractual information that is created daily by
+                  financial institutions, can all be dramatically improved with
+                  blockchain and NFT technology.
+                </p>
+                <label className="">5. Can NFTs be copied? </label>
+                <p>
+                  Ownership cannot be copied, but the data stored elsewhere
+                  referred to in the metadata of the NFT can be.
+                </p>
+                <p>
+                  Take, for example, the Mona Lisa. There are many lookalikes
+                  and iterations of the original painting, but there is only one
+                  original Mona Lisa artwork (cue art historians correcting me
+                  here). The same goes for an NFT, it’s impossible to fake the
+                  owner’s wallet even though copying the contents of an NFT can
+                  be done.
+                </p>
+                <p>
+                  As an example, the first, most successful, and most well known
+                  NFT collection was CryptoPunks launched for free back in 2017.
+                  Anyone can view each CryptoPunk, and can take a screen shot of
+                  it, as I have done below:
                   <br />
-                  Click <b className="headd"> NAME MY CCPUPPY</b>
-                  <br /> Add your CCPuppy name and description
                   <br />
-                  Click <b className="headd"> MINT MY CCPUPPY</b>
-                  <br /> This will take you to{" "}
-                  <b className="headd"> nftkey.app</b> from where you will be
-                  able to pay the gas fee and purchase price in <br />
-                  order to mint your brand new CCPuppy.
+                  <img src={punk} className="punk" />
+                  <br />
+                  <br />
+                  <p>
+                    This is CryptoPunk 5822 which sold for 8,000 ETH, worth
+                    $23.7mm at the time of sale.
+                  </p>
+                  <p>
+                    I can copy this image, and in fact I can mint it as my own
+                    NFT, but my version will be worth zilch. The blockchain
+                    history of the original proves its provenance, and that
+                    gives it value.
+                  </p>
                 </p>
-                <label className="pt-4"> • How do I SELL MY CCPUPPY?</label>
-                <p>
-                  If you were a lucky pup and bought one of the first 1,000
-                  minted CCPuppies, then you will have the option to list your
-                  puppy for sale at nftkey.app and your CCPuppy will appear on
-                  the BUY A CCPUPPY page.
-                </p>
-                <label className="pt-4">
-                  {" "}
-                  • How do I BUY A MINTED CCPUPPY?
+                <label className="">
+                  6. What is the environmental impact of NFTs?
                 </label>
                 <p>
-                  CCPuppies will be available for sale after minting at: Click
-                  the BUY A CCPUPPY tab that will display all the CCPuppies for
-                  sale.{" "}
-                  <a href=""> https://nftkey.app/collections/ccpuppies/</a>
+                  There has been a lot of debate around this topic, some of
+                  which has been based on a misunderstanding of the energy
+                  requirements for blockchain technology, specifically BTC which
+                  uses a PoW (Proof-of-Work) consensus mechanism.{" "}
                 </p>
-                <label className="pt-4"> • How do I view my CCPUPPIES?</label>
+                <p>We will not get into that discussion today.</p>
                 <p>
-                  To view your CCPuppies, head over to your private YOUR LITTER
-                  page.
+                  Suffice to say that our Puppies are minted using the Ethereum
+                  network, which recently transitioned (so millennium darling)
+                  to a PoS (Proof-of-Stake) consensus mechanism, cutting its
+                  energy usage by over 99.9% at a stroke.
                 </p>
-                <label className="pt-4"> • Are CCPUPPIES like Bitcoin?</label>
                 <p>
-                  First things first; CCPuppies and Cryptocurrencies are NEVER
-                  the same. Rather, CCPuppies can well be considered as
-                  Cryptocollectibles. Here is how it can be explained even
-                  better:- Cryptocurrencies are more likes dollars or pounds.
-                  Cryptocollectibles (CCPuppies) can be considered more like
-                  assets, such as baseball cards or a piece of fine art. As the
-                  Smart contract depicts, you are the sole owner of any
-                  CCPuppies that you own. As it is with real-world stuff, like a
-                  product or property that you own, the market price depends on
-                  factors like demand and supply.
+                  It seems inconceivable to me that anyone can criticise the
+                  Ethereum network for excessive energy consumption, but I am
+                  always keen to hear a dissenting opinion.
                 </p>
-                <span className="fees pt-5">FAQ's on FEES</span>
-                <br />
-                <label className="pt-4"> What is "gas"?</label>
-                <p>
-                  Gas refers to the price to be paid for a transaction or
-                  contract to be executed in the Binance Smart Chain.
-                </p>
-                <label className="pt-4">Fees</label>
-                <p>
-                  There is a fee of 0.025 BNB for all for sale listing. 0.5%
-                  fees on all successful Puppy sales.
-                </p>
-                <span className="fees pt-5"> FAQ's on METAMASK</span>
-                <br />
-                <label className="pt-4">
-                  How to view your CCPUPPIES in MetaMask?
+                <label className="">
+                  7. What’s the connection between NFTs and cryptocurrency?
                 </label>
                 <p>
-                  Go to MetaMask ADD TOKEN In CUSTOM TOKEN tab put this address
-                  TBC, you should see PNNY. Never transfer your PUPPIES from
-                  MetaMask. Use the site.
+                  NFTs aren’t cryptocurrencies, but they are built using
+                  blockchain technology which keeps a record of all the
+                  transactions connected to the NFT and the property it
+                  represents.
                 </p>
-                <label className="pt-4">
-                  What is our Smart contract Address?
-                </label>
-                <p>https://bscscan.com/address/TBC</p>
-                <label className="pt-4">
-                  How do I install and use MetaMask?
-                </label>
+                <label className="">8. Where do I buy and sell NFTs?</label>
                 <p>
-                  A very fine question, for which we have all the answers - see
-                  the PDF guides to download below.
+                  There are many centralised NFT marketplaces, the most popular
+                  and famous of which include Opensea, Rarible, and Nifty’s.
                 </p>
-                <span className="meta">PDF 'HOW TO' GUIDES</span>
-                <br />
-                <p className="pt-4 pb-4">
-                  For a more a detailed guide of how to install MetaMask or fund
-                  your MetaMask with BNB please download our free PDF How To
-                  guides.
+                <p>
+                  It is usually the case that the buying and selling process for
+                  NFTs is conducted using cryptocurrency. We will be taking that
+                  route with our puppies, specifically ETH (Ethereum). Full
+                  details of how to do that are in the “Practical” FAQs with an
+                  accompanying video.
                 </p>
-                <span className="meta">
-                  <li>METAMASK</li>
-                  <li>BNB</li>
-                </span>
+                <label className="">9. Copyright</label>
+                <p>This is a thorny issue in the world of NFTs.</p>
+                <p>
+                  Some NFTs transfer the copyright to the buyer, some do not.
+                </p>
+                <p>When you buy a Nifty Puppy, you own the copyright.</p>
+                <label className="">10. Rarity</label>
+                <p>
+                  One of the critical factors to determine the value of an NFT.
+                  Each NFT has unique and different properties or traits, and
+                  the rarity of individual traits or combinations of traits
+                  dictate an NFT's rarity and therefore desirability, which in
+                  turn drives its value. Just like most things in life, when an
+                  NFT is rare, its value increases. You can use different tools
+                  to check the rarity of an NFT, like rarity.tools, or Rarity
+                  Sniper, or indeed OpenSea itself.
+                </p>
               </div>
             </div>
           </div>

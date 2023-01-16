@@ -10,8 +10,9 @@ import { ethers } from "ethers";
 // https://mainnet.infura.io/v3/97d9f5fedfa34db7a15d53259ffe34c2
 
 import ABI from "./abi.json";
-const PROVIDER = "https://goerli.infura.io/v3/bd3283c53475479792ed8f68c398a0e9";
-const CONTRACT = "0x37CEc5a9645c16D217177714566E9580c0c92ce4";
+const PROVIDER =
+  "https://mainnet.infura.io/v3/97d9f5fedfa34db7a15d53259ffe34c2";
+const CONTRACT = "0x4484a2097c01AaE7bec6a75E93d7A3d5b0cA4825";
 
 export default function Mintapuppy() {
   const [connected, setConnected] = useState(false);
@@ -105,7 +106,7 @@ export default function Mintapuppy() {
                 <div className="row pt-4">
                   <div className="col-12 text-center">
                     <p className="text-center">
-                      {/* Price: <b>{(price / 10e18) * quantity} ETH</b> */}
+                      Price: <b>{(price / 10e18) * quantity} ETH</b>
                     </p>
                   </div>
                   <div className="col-12 text-center">

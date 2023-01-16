@@ -196,6 +196,13 @@
   },
   {
     "inputs": [],
+    "name": "batchSize",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "collectionSize",
     "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
@@ -430,6 +437,15 @@
       { "internalType": "address", "name": "newOwner", "type": "address" }
     ],
     "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "newSupply", "type": "uint256" }
+    ],
+    "name": "updateBatch",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

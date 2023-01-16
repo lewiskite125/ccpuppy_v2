@@ -635,8 +635,8 @@ a {
   min-height: 60vh;
 }
 .dropdown-menu {
-  left: auto;
-  right: 0 !important;
+  /* left: -80px;
+  right: -100px !important; */
 }
 .dropdown-toggle {
   cursor: pointer !important;
@@ -656,4 +656,14 @@ a {
   font-family: "Suez One";
   font-size: 22px;
   user-select: none;
+}
+.logo-docs {
+  width: 90px;
+}
+.transfer {
+  max-width: 100%;
+}
+.punk {
+  width: 250px;
+  max-width: 100%;
 }
