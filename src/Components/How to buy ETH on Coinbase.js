@@ -38,6 +38,8 @@ export default function HowtobuyETHonCoinbase() {
                 </p>
                 <p>
                   There are the steps you need to take:
+                  <br />
+                  <br />
                   <ul>
                     <li>Set up an account at Coinbase.</li>
                     <li>Fund you Coinbase account.</li>
@@ -50,6 +52,7 @@ export default function HowtobuyETHonCoinbase() {
                 <label className="headd">SET UP AN ACCOUNT AT COINBASE</label>
                 <p>
                   May we suggest you use our marketing affiliate link:
+                  <br />
                   <br />
                   <a
                     href="https://www.coinbase.com/join/timmis_d"

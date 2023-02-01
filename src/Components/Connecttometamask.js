@@ -22,7 +22,7 @@ export default function Connecttometamask() {
                 <p>
                   MetaMask has become one of the world’s most popular wallets
                   for cryptos. We will be using MetaMask to store ETH before we
-                  mint a CC Pup.
+                  mint a Nifty Puppy.
                 </p>
                 <label className="headd">METAMASK DESCRIPTION</label>
                 <p>
@@ -51,6 +51,7 @@ export default function Connecttometamask() {
                   <b>Step 4.</b> Click “Add Extension” to complete the
                   installation.
                   <br />
+                  <br />
                   You will know MetaMask has been installed when you see the fox
                   logo on the upper right-hand corner of your browser:
                   <br /> <img src={ImgB} className="logo-docs ml-3" />
@@ -67,6 +68,7 @@ export default function Connecttometamask() {
                 </p>
                 <p>
                   <b>Step 8.</b> Create a password. <br />
+                  <br />
                   At this stage there is short 1 minute 35 second video about
                   securing your wallet focussing on the importance of keeping
                   your recovery phrase safe. Unless you are a seasoned user of
@@ -75,6 +77,7 @@ export default function Connecttometamask() {
                 <p>
                   <b>Step 9.</b> Click “Next” and then “Click here to reveal
                   secret words”. <br />
+                  <br />
                   Write these words down accurately and in order, and store
                   somewhere safe. Never reveal them to anyone else. Ownership of
                   your crypto assets in MetaMask is proven by knowing the secret
@@ -86,6 +89,7 @@ export default function Connecttometamask() {
                 </p>
                 <p>
                   <b>Step 11.</b> Click “All Done”.
+                  <br />
                   <br />
                   At this point you will be taken to an overview of your wallet
                   showing your wallet details on the Ethereum network:

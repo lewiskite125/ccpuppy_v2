@@ -30,6 +30,7 @@ export default function Mintyourveryownpuppy() {
                 <p>
                   Head on over to our Curious Cryptos’ Pups website and click on
                   the “Mint” tab which looks like this:
+                  <br />
                   <img src={mintpng} className="w-100" />
                 </p>
                 <p>
@@ -49,7 +50,7 @@ export default function Mintyourveryownpuppy() {
                   Click on that button, approve the transaction in MetaMask, and
                   you are all done.
                 </p>
-                <p>You are now the proud owner of a CCPUP.</p>
+                <p>You are now the proud owner of a Nifty Puppy.</p>
                 <p>
                   <small>
                     <i>Please feel free to contact us with any questions.</i>

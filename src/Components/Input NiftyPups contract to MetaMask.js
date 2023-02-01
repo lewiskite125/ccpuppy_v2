@@ -13,7 +13,7 @@ export default function InputNiftyPupscontracttoMetaMask() {
             <div className="row pt-5">
               <div className="col-md-12 text-center">
                 <label className="heading">
-                  Input NiftyPups contract to MetaMask
+                  Input Nifty Puppies contract to MetaMask
                 </label>
               </div>
             </div>

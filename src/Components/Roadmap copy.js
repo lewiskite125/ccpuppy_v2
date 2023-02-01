@@ -31,10 +31,10 @@ export default function Roadmap() {
               <p className="description">
                 Drum roll please...
                 <br />
-                <li>Our first litter of 500 little puppies are born.</li>
+                <li>Our first litter of 999 little puppies are born.</li>
                 <li>
-                  The first 100 pups are FREE and will be released from the
-                  kennel on [DATE]
+                  The first 99 pups are FREE and will be released from the
+                  kennel on NOW
                 </li>
                 <li>
                   If this is the first time you have ever minted an NFT then

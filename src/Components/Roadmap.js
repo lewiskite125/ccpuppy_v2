@@ -36,12 +36,12 @@ export default function Roadmap() {
                 </li>
                 <li>
                   If this is the first time you have ever minted an NFT then
-                  watch our{" "}
+                  read our{" "}
                   <Link to="/Connect to metamask">
                     <span className="style">HOW TO MINT</span>
                   </Link>{" "}
-                  video guide created by Mark Timmis, CEO of Curious Cryptos
-                  Ltd, and he’ll walk you through the whole process.
+                  guide created by Mark Timmis, CEO of Curious Cryptos Ltd, and
+                  he’ll walk you through the whole process.
                 </li>
               </ul>
             </p>
@@ -63,17 +63,17 @@ export default function Roadmap() {
             <p className="description text-right text-sm-left">
               <ul className="pl-3">
                 <li>
-                  As soon as the first 100 free pups have been homed, we will
+                  As soon as the first 99 free pups have been homed, we will
                   release the other litters in packs of 100.{" "}
                 </li>
                 <li>
                   Follow us on Twitter to know when the release dates are coming
                   up.
                 </li>
-                <li>101 – 200 = £</li>
-                <li> 201 – 300 = ££</li>
-                <li>301 – 400 = £££</li>
-                <li>401 – 500 = ££££</li>
+                <li>100 – 299 = £</li>
+                <li> 300 – 499 = ££</li>
+                <li>500 – 799 = £££</li>
+                <li>800 – 999 = ££££</li>
               </ul>
             </p>
           </div>
@@ -95,9 +95,9 @@ export default function Roadmap() {
             <p className="description">
               <ul className="pl-3">
                 <li>
-                  At time of minting you can decide whether your puppy remains
-                  forever a pup or grows up with changing traits and
-                  characteristics.
+                  One of your first tasks as a new owner of a CCPup will be to
+                  decide whether your puppy remains forever a pup or grows up
+                  with changing traits and characteristics.
                 </li>
               </ul>
             </p>
