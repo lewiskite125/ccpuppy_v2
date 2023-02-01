@@ -14,7 +14,7 @@ import paws4 from "../Images/paws4.png";
 
 export default function Roadmap() {
   return (
-    <div className="bg">
+    <div className="bg" id="top">
       <div className="heading text-center pt-5 pb-5">
         <label className="heading">ROADMAP</label>
       </div>
@@ -37,7 +37,7 @@ export default function Roadmap() {
                 <li>
                   If this is the first time you have ever minted an NFT then
                   watch our{" "}
-                  <Link to="/Mintapuppy">
+                  <Link to="/Connect to metamask">
                     <span className="style">HOW TO MINT</span>
                   </Link>{" "}
                   video guide created by Mark Timmis, CEO of Curious Cryptos

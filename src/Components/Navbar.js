@@ -4,7 +4,7 @@ import { Route, Routes, Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div>
+    <div id="top">
       <div className="Tab"></div>
       <div className="bg">
         <div className="container main">

@@ -41,13 +41,13 @@ export default function Home() {
                 friends, so a % of our net profits will be going
                 <br /> straight to GUIDE DOGS FOR THE BLIND.
                 <br />
-                <br /> ​ Follow out roadmap to see how we'll be releasing our
-                puppies... ​
+                <br /> ​ Follow our <a href="/Roadmap#top">roadmap</a> to see
+                how we'll be releasing our puppies... ​
               </p>
             </div>
           </div>
           <div className="text-center py-5">
-            <Link to="/Roadmap">
+            <Link to="/Mintapuppy">
               <button className="btn">MINT NOW</button>
             </Link>
           </div>
