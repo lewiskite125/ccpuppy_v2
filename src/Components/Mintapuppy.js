@@ -22,22 +22,42 @@ export default function Mintapuppy() {
 
   const connect = async () => {
     if (!window.ethereum) {
+      console.error("MetaMask is not installed.");
       toast.error("Metamask not found");
       return;
     }
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    let m;
+  
+    const provider = new ethers.BrowserProvider(window.ethereum); // Updated for ethers v6
+
     try {
       await provider.send("eth_requestAccounts", []);
-    } catch (e) {
-      toast.error(e.message);
+    } catch (error) {
+      console.error("Error requesting accounts:", error);
+      toast.error(error.message);
       return;
     }
-
-    const ct = new ethers.Contract(CONTRACT, ABI, provider);
-    setPrice(Number(await ct.price_Public()));
-    setMax(Number(await ct.mint_perAdd()));
-    setConnected(true);
+  
+    const signer = await provider.getSigner();
+  
+    // Create contract instance
+    const ct = new ethers.Contract(CONTRACT, ABI, signer);
+  
+    // Interact with the contract
+    try {
+      const network = await provider.getNetwork();
+      if (String(network.chainId) !== "1") {
+        toast.error("You're on different network at Metamask, Change it to Ethereum Network & Try again!");
+      } else {
+        const price = await ct.price_Public();
+        const max = await ct.mint_perAdd();
+        setPrice(Number(price));
+        setMax(Number(max));
+        setConnected(true);
+      }
+    } catch (error) {
+      console.error("Error calling price_Public:", error);
+      toast.error(error.message);
+    }
   };
 
   const mint = async () => {
@@ -46,7 +66,7 @@ export default function Mintapuppy() {
       return;
     }
 
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const provider = new ethers.BrowserProvider(window.ethereum);
 
     let m;
     try {
@@ -60,35 +80,41 @@ export default function Mintapuppy() {
     const signer = provider.getSigner();
     const ct = new ethers.Contract(CONTRACT, ABI, signer);
 
-    if (!(await ct.status_Public())) {
-      toast.error("Minting not Active!!");
-      return;
-    }
 
-    const balance = Number(await provider.getBalance(m));
-
-    if (balance < Number(price) * quantity) {
-      toast.error("Insufficient ETH");
-      return;
-    }
-    await toast.promise(
-      new Promise(async (resolve, reject) => {
-        try {
-          const tx = await ct.mint_Public(String(quantity), {
-            value: String(price * quantity),
-          });
-          const req = await tx.wait();
-        } catch (e) {
-          reject();
-        }
-        resolve();
-      }),
-      {
-        pending: "Loading",
-        success: "Complete",
-        error: "Failed!!",
+    const network = await provider.getNetwork();
+    if (String(network.chainId) !== "1") {
+      toast.error("You're on different network at Metamask, Change it to Ethereum Network & Try again!");
+    } else {
+      if (!(await ct.status_Public())) {
+        toast.error("Minting not Active!!");
+        return;
       }
-    );
+
+      const balance = Number(await provider.getBalance(m));
+
+      if (balance < Number(price) * quantity) {
+        toast.error("Insufficient ETH");
+        return;
+      }
+      await toast.promise(
+        new Promise(async (resolve, reject) => {
+          try {
+            const tx = await ct.mint_Public(String(quantity), {
+              value: String(price * quantity),
+            });
+            const req = await tx.wait();
+          } catch (e) {
+            reject();
+          }
+          resolve();
+        }),
+        {
+          pending: "Loading",
+          success: "Complete",
+          error: "Failed!!",
+        }
+      );
+    }
   };
 
   return (
