@@ -12,7 +12,10 @@ import { ethers } from "ethers";
 import ABI from "./abi.json";
 const PROVIDER =
   "https://mainnet.infura.io/v3/97d9f5fedfa34db7a15d53259ffe34c2";
-const CONTRACT = "0x4484a2097c01AaE7bec6a75E93d7A3d5b0cA4825";
+  
+const CONTRACT = "0x4484a2097c01AaE7bec6a75E93d7A3d5b0cA4825"; // Actual ethereum network contract address
+
+// const CONTRACT = "0x72020AA0feAC7B86ab15f891711bd6e7Ba023717"; // sepolia testing network contract address
 
 export default function Mintapuppy() {
   const [connected, setConnected] = useState(false);
@@ -45,15 +48,25 @@ export default function Mintapuppy() {
     // Interact with the contract
     try {
       const network = await provider.getNetwork();
+
+      //Comment out this below code while doing testing
       if (String(network.chainId) !== "1") {
         toast.error("You're on different network at Metamask, Change it to Ethereum Network & Try again!");
-      } else {
-        const price = await ct.price_Public();
-        const max = await ct.mint_perAdd();
-        setPrice(Number(price));
-        setMax(Number(max));
-        setConnected(true);
+        return;
       }
+
+      //For testing uncomment the below code of sepolia testing network
+      // if (String(network.chainId) !== "11155111") {
+      //   toast.error("You're on different network at Metamask, Change it to Ethereum Network & Try again!");
+      //   return;
+      // } 
+
+      const price = await ct.price_Public();
+      const max = await ct.mint_perAdd();
+      setPrice(Number(price));
+      setMax(Number(max));
+      setConnected(true);
+    
     } catch (error) {
       console.error("Error calling price_Public:", error);
       toast.error(error.message);
@@ -65,9 +78,9 @@ export default function Mintapuppy() {
       toast.error("Wallet not found");
       return;
     }
-
+  
     const provider = new ethers.BrowserProvider(window.ethereum);
-
+  
     let m;
     try {
       m = await provider.send("eth_requestAccounts", []);
@@ -76,44 +89,59 @@ export default function Mintapuppy() {
       toast.error(e.message);
       return;
     }
-
-    const signer = provider.getSigner();
+  
+    const signer = await provider.getSigner();
     const ct = new ethers.Contract(CONTRACT, ABI, signer);
-
-
+  
     const network = await provider.getNetwork();
+
+    //Comment out this below code while doing testing
     if (String(network.chainId) !== "1") {
-      toast.error("You're on different network at Metamask, Change it to Ethereum Network & Try again!");
-    } else {
+      toast.error("You're on a different network in MetaMask. Switch to Sepolia Testnet!");
+      return;
+    }
+  
+    //For testing uncomment the below code of sepolia testing network
+    // if (String(network.chainId) !== "11155111") {
+    //   toast.error("You're on a different network in MetaMask. Switch to Sepolia Testnet!");
+    //   return;
+    // }
+
+    try {
       if (!(await ct.status_Public())) {
-        toast.error("Minting not Active!!");
+        toast.error("Minting is not active!");
         return;
       }
-
+  
       const balance = Number(await provider.getBalance(m));
-
       if (balance < Number(price) * quantity) {
         toast.error("Insufficient ETH");
         return;
       }
+  
       await toast.promise(
         new Promise(async (resolve, reject) => {
           try {
             const tx = await ct.mint_Public(String(quantity), {
-              value: String(price * quantity),
+              value: ethers.parseEther(String(price * quantity)),
             });
-            const req = await tx.wait();
+            const receipt = await tx.wait();
+            console.log("Transaction receipt:", receipt);
+            resolve();
           } catch (e) {
-            reject();
+            console.error(e);
+            reject(e);
           }
-          resolve();
         }),
         {
-          pending: "Loading",
-          success: "Complete",
-          error: "Failed!!",
+          pending: "Processing transaction...",
+          success: "Minting complete!",
+          error: "Transaction failed.",
         }
       );
+    } catch (e) {
+      console.error(e);
+      toast.error(e.reason || e.message || "An error occurred");
     }
   };
 
