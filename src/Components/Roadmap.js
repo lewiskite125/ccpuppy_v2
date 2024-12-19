@@ -127,7 +127,7 @@ export default function Roadmap() {
                 </li>
                 <li>
                   As your puppy gets older, your NFT itself changes and you will
-                  be send an updated NFT
+                  be sent an updated NFT.
                 </li>
                 <li>
                   {" "}
