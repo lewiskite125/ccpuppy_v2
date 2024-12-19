@@ -93,11 +93,7 @@ export default function Thetopdogs() {
                       HEAD OF DATA ANALYTICS &<br /> CODING
                     </label>
                     <p className="pt-">
-                      Robin has recently started her PhD. in inertial
-                      confinement fusion at Oxford University. This project
-                      means she spends her time designing experiments utilising
-                      quadrillion watt lasers and analysing the subsequent
-                      output data produced by supercomputers.
+                      Robin has recently completed her PhD. in inertial confinement fusion at Oxford University is halfway through a two-year post doc project at that university.  This project means she spends her time designing experiments utilising quadrillion watt lasers and analysing the subsequent output data produced by supercomputers.
                     </p>
                   </div>
                   <div className="col-2"></div>
