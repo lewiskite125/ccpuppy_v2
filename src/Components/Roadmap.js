@@ -29,16 +29,16 @@ export default function Roadmap() {
               Drum roll please...
               <br />
               <ul className="pl-3">
-                <li>Our first litter of 500 little puppies are born.</li>
+                <li>Our first litter of 999 little puppies are born.</li>
                 <li>
                   The first 100 pups are FREE and will be released from the
-                  kennel on [DATE]
+                  kennel on 16<sup>th</sup> December 2024.
                 </li>
                 <li>
                   If this is the first time you have ever minted an NFT then
                   read our{" "}
                   <Link to="/Connect to metamask">
-                    <span className="style">HOW TO MINT</span>
+                    <span className="style-blk">HOW TO MINT</span>
                   </Link>{" "}
                   guide created by Mark Timmis, CEO of Curious Cryptos Ltd, and
                   he’ll walk you through the whole process.
@@ -64,16 +64,17 @@ export default function Roadmap() {
               <ul className="pl-3">
                 <li>
                   As soon as the first 99 free pups have been homed, we will
-                  release the other litters in packs of 100.{" "}
+                  release the other litters in packs of 200.{" "}
                 </li>
                 <li>
-                  Follow us on Twitter to know when the release dates are coming
+                  Follow us on <a href="https://x.com/MarkCuriousCryp" target="_blank" className="style-blk">X</a> to know when the release dates are coming
                   up.
                 </li>
                 <li>100 – 299 = £</li>
                 <li> 300 – 499 = ££</li>
-                <li>500 – 799 = £££</li>
-                <li>800 – 999 = ££££</li>
+                <li>500 – 699 = £££</li>
+                <li>700 – 899 = ££££</li>
+                <li>900 – 999 = £££££</li>
               </ul>
             </p>
           </div>
@@ -94,7 +95,7 @@ export default function Roadmap() {
             <h5 className="title">Nature Nurture</h5>
             <p className="description">
               <ul className="pl-3">
-                <li>
+                <li className="clean">
                   One of your first tasks as a new owner of a CCPup will be to
                   decide whether your puppy remains forever a pup or grows up
                   with changing traits and characteristics.
@@ -120,7 +121,7 @@ export default function Roadmap() {
               <ul className="pl-3">
                 <li>
                   If you choose to nurture and train your pup you must engage
-                  with the puppy training school where you will receive for the
+                  with the puppy training school where you will receive instructions for the
                   right nutrition and to learn how to get your pup to sit, beg,
                   fetch, etc.
                 </li>
